@@ -94,7 +94,6 @@ export const TodoItem: React.FC<Props> = ({
 
     if (editedTodoTitle.trim() === '') {
       handleDeleteTodo(id);
-      setIsLoading(false);
 
       return;
     }
