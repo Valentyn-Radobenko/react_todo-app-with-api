@@ -23,8 +23,8 @@ export const App: React.FC = () => {
 
   const textField = useRef<HTMLInputElement>(null);
 
-  const completedTodos = [...todos].filter(todo => todo.completed);
-  const activeTodos = [...todos].filter(todo => !todo.completed);
+  const completedTodos = todos.filter(todo => todo.completed);
+  const activeTodos = todos.filter(todo => !todo.completed);
 
   const filteredTodos = () => {
     switch (filter) {
